@@ -68,7 +68,8 @@ public class CameraFragment extends Fragment {
 	public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
 		final View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 		mCameraView = (CameraGLView)rootView.findViewById(R.id.cameraView);
-		mCameraView.setVideoSize(1280, 720);
+		//mCameraView.setVideoSize(1280, 720);
+		mCameraView.setVideoSize(1920, 1080);
 		mCameraView.setOnClickListener(mOnClickListener);
 		mScaleModeView = (TextView)rootView.findViewById(R.id.scalemode_textview);
 		updateScaleModeText();
